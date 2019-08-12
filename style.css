@@ -1,6 +1,6 @@
 body {
-  background-color: #EEE;
-  font-family: 'Roboto Slab', serif;
+  background-color: #eee;
+  font-family: "Roboto Slab", serif;
 }
 .topo {
   display: flex;
@@ -44,8 +44,8 @@ body {
 
 .conteudo-form input {
   border: none;
-  color: #FF6E14;
-  border-bottom: 1px solid #FF6E14;
+  color: #ff6e14;
+  border-bottom: 1px solid #ff6e14;
   background-color: transparent;
   height: 35px;
   width: 347px;
@@ -56,17 +56,16 @@ body {
   height: 35px;
   color: white;
   font-weight: bold;
-  background-color: #FF6E14;
-  border-bottom: 1px solid #FF6E14;
+  background-color: #ff6e14;
+  border-bottom: 1px solid #ff6e14;
   text-transform: uppercase;
 }
 
 .lista-top {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   flex-direction: column;
   margin-top: 11px;
 }
@@ -78,19 +77,37 @@ body {
 
 .lista-top .titulo h2 {
   font-size: 44px;
-  color: #AA1423;
+  color: #aa1423;
 }
 
 .lista-top .lista-top-items {
   font-size: 22px;
-  color: #AA1423;
+  margin: 25px 25px 25px 25px;
+}
+
+.lista-top .lista-top-items ul li {
+  border-bottom: 1px solid #eee;
+}
+.lista-top .lista-top-items ul li div {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.lista-top .lista-top-items .links {
+  color: #aa1423;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.lista-top .lista-top-items .valores {
+  color: #777777;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .footer .copyright {
@@ -98,7 +115,7 @@ body {
   margin-left: 150px;
   margin-right: 469px;
   height: 50px;
-  color: #AA1423;
+  color: #aa1423;
   font-weight: 500;
 }
 
@@ -109,5 +126,87 @@ body {
 
 .footer ul li {
   display: inline-block;
-  margin:10px;
+  margin: 10px;
+}
+
+/* Utilizada para a impressão do site */
+@media print {
+  /* Aqui vai as declarações desejadas */
+}
+
+/* 
+  Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) {
+  .topo {
+    min-height: 10%;
+  }
+
+  .conteudo-principal {
+    min-height: 482px;
+    min-width: 60px;
+    padding: 20px;
+  }
+
+  .texto-principal {
+    font-size: 3rem;
+    font-size: 30px;
+  }
+
+  .texto-principal p {
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .conteudo-form {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .conteudo-form input {
+    width: 60%;
+  }
+}
+
+@media (min-width: 576px) {
+  .topo {
+    min-height: 10%;
+  }
+
+  .conteudo-principal {
+    min-height: 482px;
+    min-width: 50px;
+  }
+
+  .texto-principal {
+    font-size: 3rem;
+  }
+
+  .texto-principal p {
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
